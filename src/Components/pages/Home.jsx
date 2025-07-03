@@ -1,11 +1,14 @@
 
+import Countener from '../Countener'
 import Routlayout from '../layouts/Routlayout'
 
 
 const Home = () => {
   return (
     <>
-    <h1>yghjhyghgjyg</h1>
+    <Countener>
+      <h1>This Is Home Page</h1>
+    </Countener>
     
     </>
   )

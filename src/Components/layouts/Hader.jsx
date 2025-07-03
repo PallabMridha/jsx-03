@@ -8,6 +8,7 @@ import Image from '../Image'
 import Logo from '../../assets/OREBI©.png'
 import Countener from '../Countener'
 import Flex from '../Flex'
+import { Link } from 'react-router-dom';
 
 const Hader = () => {
   return (
@@ -19,11 +20,28 @@ const Hader = () => {
               <Image src={Logo} />
             </div>
             <ul className={'flex m-auto'}>
-              <li className={`uppercase font-bold text-[14px] pr-10 cursor-pointer dm `}>Home</li>
-              <li className={`uppercase font-bold text-[14px] pr-10 cursor-pointer dm text-pramiry`}>Shop</li>
-              <li className={`uppercase font-bold text-[14px] pr-10 cursor-pointer dm text-pramiry`}>About</li>
-              <li className={`uppercase font-bold text-[14px] pr-10 cursor-pointer dm text-pramiry`}>Contacts</li>
-              <li className={`uppercase font-bold text-[14px] pr-10 cursor-pointer dm text-pramiry`}>Journal</li>
+              <Link to={"/"}>
+              <li className={`uppercase font-bold text-[14px] pr-10 dm text-pramiry`}>Home</li>
+              </Link>
+
+              <Link to={"/shop"}>
+               <li className={`uppercase font-bold text-[14px] pr-10 dm text-pramiry`}>Shop</li>
+              </Link>
+
+             
+              <Link to={"/about"}>
+               <li className={`uppercase font-bold text-[14px] pr-10 dm text-pramiry`}>About</li>
+              </Link>
+
+
+              <Link to={"/contacts"}>
+              <li className={`uppercase font-bold text-[14px] pr-10 dm text-pramiry`}>Contacts</li>
+              </Link>
+
+
+             <Link to={"journal"}>
+              <li className={`uppercase font-bold text-[14px] pr-10 dm text-pramiry`}>Journal</li>
+             </Link>
             </ul>
 
           </Flex>
