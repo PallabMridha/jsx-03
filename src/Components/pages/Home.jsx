@@ -1,14 +1,17 @@
 
 import Countener from '../Countener'
-import Routlayout from '../layouts/Routlayout'
+import Adds from '../layouts/Adds'
+import Benner from '../layouts/Benner'
+import Information from '../layouts/Information'
+
 
 
 const Home = () => {
   return (
     <>
-    <Countener>
-      <h1>This Is Home Page</h1>
-    </Countener>
+    <Benner/>
+    <Information/>
+    <Adds/>
     
     </>
   )

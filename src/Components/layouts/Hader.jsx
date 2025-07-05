@@ -17,7 +17,9 @@ const Hader = () => {
         <Countener>
           <Flex className={`mt-4`}>
             <div className="">
+             <Link to={"/"}>
               <Image src={Logo} />
+             </Link>
             </div>
             <ul className={'flex m-auto'}>
               <Link to={"/"}>
@@ -47,12 +49,9 @@ const Hader = () => {
           </Flex>
         </Countener>
 
-        <div className="bg-fromc mt-9">
+        <div className="bg-fromc mt-9 p-[20px]">
           <Countener>
-            <Flex>
-              <div className="flex m-auto pt-5 pb-5">
-
-                <div className={`flex justify-between items-center gap-x-38`}>
+            <Flex className={`justify-between`}>
                   <div className="flex gap-2 items-center">
                     <button className={``}><><RiMenu2Fill /></></button>
                     <p>Shop by Category</p>
@@ -68,13 +67,8 @@ const Hader = () => {
                     <><FaUserAlt /></>
                     <><AiFillCaretDown /></>
                     <button className={`pl-4`}><><FaShoppingCart /></></button>
-
                   </div>
-
-
-                </div>
-
-              </div>
+              
             </Flex>
           </Countener>
         </div>
